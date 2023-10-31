@@ -1,0 +1,62 @@
+.weather-card {
+  border: 2px solid;
+  border-radius: 5px;
+  width: fit-content;
+  padding: 2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#current-weather-container {
+  color: rgb(27, 112, 112);
+  background-color: rgb(175, 204, 194);
+  width: fit-content;
+  float: left;
+  margin: 2em;
+}
+
+#today-weather-container,
+#weather-forecast-container {
+  display: flex;
+  gap: 0.5rem;
+}
+
+#next-hour-days-weather {
+  margin-top: 5em;
+}
+
+.temperature {
+  font-size: 2rem;
+}
+
+.fa-solid {
+  font-size: 3rem;
+}
+
+.fa-sun {
+  color: rgb(244, 178, 9);
+}
+
+#map {
+  width: 70%;
+  height: 273 rem;
+  float: right;
+  margin-left: 2em;
+}
+
+.map-todayWeathersCard {
+  display: flex;
+}
+
+.header {
+  color: white;
+  background-color: rgb(23, 22, 22);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding: 1em;
+  margin-top: auto;
+  margin-left: 0%;
+}

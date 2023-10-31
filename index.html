@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WeatherApplication</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+      integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+      integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+      crossorigin=""
+    ></script>
+
+    <style>
+      #map {
+        height: 180px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h2>Weather Application <span id="location-title"></span></h2>
+      <h2>Check the weather in your location</h2>
+    </div>
+
+    <h3>Now</h3>
+    <div id="current-weather-container"></div>
+
+    <div class="map-todayWeathersCard">
+      <div id="map"></div>
+    </div>
+    <div class="next-hour-days-weather">
+      <h3>Today's weather</h3>
+      <div id="today-weather-container"></div>
+
+      <h3>7 day weather forecast</h3>
+      <div id="weather-forecast-container"></div>
+    </div>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
